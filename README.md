@@ -57,14 +57,16 @@
      <kbd>
   </p>
 </div>
+<blockquote>“I think it’s very important to have a feedback loop, where you’re constantly thinking about what you’ve done and how you could be doing it better.”
+<br><strong>– Elon Musk</strong></blockquote>
 
-		
-<details>
-  <summary>Certificates</summary>
-  <br>
-  <ul>
-    <li><strong>CAMARA DE COMERCIO- </strong> II Lab de Innovación,Emprendimiento y Sostenibilidad.</li>
-	<ul>
+  </td>
+  </tr>
+</table>
 </details>
-[//]: # (Fighting against markdown and blocks isn't easy, indentation is catastrophic)
 
+</details>
+
+![Bottom of pokeball](https://user-images.githubusercontent.com/44261381/209363271-905d2a5e-8a18-44c0-a450-45dddd4d5036.png)
+
+</div>
