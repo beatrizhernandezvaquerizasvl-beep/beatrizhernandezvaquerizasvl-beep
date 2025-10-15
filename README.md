@@ -57,3 +57,10 @@
      <kbd>
   </p>
 </div>
+<details>
+  <summary>Open Source Contributions</summary>
+  <br>
+  <ul>
+    <li><strong>CAMARA DE COMERCIO- </strong> II Lab de Innovación,Emprendimiento y Sostenibilidad.</li>
+	<ul>
+</details>
