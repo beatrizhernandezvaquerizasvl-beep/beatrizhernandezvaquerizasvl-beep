@@ -66,3 +66,5 @@
     <li><strong>CAMARA DE COMERCIO- </strong> II Lab de Innovación,Emprendimiento y Sostenibilidad.</li>
 	<ul>
 </details>
+[//]: # (Fighting against markdown and blocks isn't easy, indentation is catastrophic)
+
