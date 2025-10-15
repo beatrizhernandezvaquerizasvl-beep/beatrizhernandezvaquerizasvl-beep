@@ -16,7 +16,7 @@
 <br>
 <div>
   <div align=center>
-      <img height="200" alt="Beatriz foto" src="https://sdmntpraustraliaeast.oaiusercontent.com/files/00000000-941c-61fa-bea6-f96ba79e672b/raw?se=2025-10-15T20%3A03%3A09Z&sp=r&sv=2024-08-04&sr=b&scid=312fb992-222b-4bca-8766-4b48c1441a68&skoid=f05d6a75-3c59-41ae-be2c-51a75f29841e&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-10-15T18%3A13%3A43Z&ske=2025-10-16T18%3A13%3A43Z&sks=b&skv=2024-08-04&sig=Mk%2BiwsL1vlqK%2BWz8NISm%2BiVfj9/Zm8PYSwuaO/943KE%3D" alt="Beatriz foto">
+      <img height="200" alt="Beatriz foto" src="https://sdmntprwestcentralus.oaiusercontent.com/files/00000000-f7f0-61fb-a989-c824e1d9fbfd/raw?se=2025-10-15T20%3A09%3A58Z&sp=r&sv=2024-08-04&sr=b&scid=bc6e88f2-aba4-46dc-8439-e1ad718558c9&skoid=f05d6a75-3c59-41ae-be2c-51a75f29841e&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-10-15T18%3A13%3A44Z&ske=2025-10-16T18%3A13%3A44Z&sks=b&skv=2024-08-04&sig=3Cy5TbDH%2BkepVKNfc/ykLdNhOtchNPCCJJef4mFXW2A%3D" alt="Beatriz foto">
   </div>
   <div align=center>
       <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com/?font=VT323&size=35&duration=3500&pause=300&color=6A0572&center=true&vCenter=true&width=500&lines=Welcome+to+My+GitHub+Profile;Hey%2C+I+am+Beatriz;Data+analyst+student;history,+music+and+travel+lover" alt="Typing SVG" /></a>
@@ -29,5 +29,4 @@
 [//]: # (You must have a lf before the markdown element when inside a block for it to work: https://stackoverflow.com/questions/29368902/how-can-i-wrap-my-markdown-in-an-html-div)
 
 <div align="left">
-```js
-/**
+
