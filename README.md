@@ -57,7 +57,7 @@
      <kbd>
 		 
 <details>
-  <summary>Open Source Contributions</summary>
+  <summary>Certificate</summary>
   <br>
   <ul>
     <li><strong>CAMARA DE COMERCIO - II Lab de Innovación, Emprendimiento y Sostenibilidad.</li>
