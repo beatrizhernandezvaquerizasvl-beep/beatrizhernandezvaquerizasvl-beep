@@ -13,12 +13,11 @@
   <style>
     /* ==========================================================================
        VINTAGE WALL STREET & FINANCIAL ANALYTICS HERO BANNER
-       Art Direction: Classical Engraving, Banknote Intaglio & Mid-Century Ledger
        ========================================================================== */
     :root {
       --bg-parchment: #EFECE6;
       --bg-parchment-deep: #E5DFD4;
-      --bg-card: rgba(247, 244, 238, 0.88);
+      --bg-card: rgba(247, 244, 238, 0.92);
       --paper-ivory: #F9F7F2;
       
       --ink-charcoal: #262624;
@@ -30,7 +29,6 @@
       --ink-slate: #475560;
       --ink-gold: #BFA878;
       --border-line: #D8D2C4;
-      --border-fine: rgba(74, 91, 78, 0.25);
 
       --font-serif-display: 'Cinzel', 'Playfair Display', Georgia, serif;
       --font-serif-text: 'Playfair Display', 'Baskerville', serif;
@@ -48,13 +46,13 @@
 
     html, body {
       width: 100%;
-      height: 100%;
-      overflow-x: hidden;
+      min-height: 100%;
       background-color: var(--bg-parchment);
       color: var(--ink-charcoal);
       font-family: var(--font-sans);
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
     }
 
     /* Cotton Security Paper Grain Simulation */
@@ -68,7 +66,6 @@
       background-repeat: repeat;
     }
 
-    /* Vintage Vignette */
     .parchment-vignette {
       position: fixed;
       inset: 0;
@@ -101,9 +98,7 @@
       padding-left: 100%;
     }
 
-    .ticker-track:hover {
-      animation-play-state: paused;
-    }
+    .ticker-track:hover { animation-play-state: paused; }
 
     .ticker-item {
       display: inline-flex;
@@ -133,7 +128,7 @@
       align-items: center;
       padding: 18px 48px;
       border-bottom: 1px solid var(--border-line);
-      background: rgba(239, 236, 230, 0.75);
+      background: rgba(239, 236, 230, 0.85);
       backdrop-filter: blur(10px);
     }
 
@@ -204,23 +199,20 @@
       transition: width 0.25s ease;
     }
 
-    .nav-links a:hover {
-      color: var(--ink-wine);
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
+    .nav-links a:hover { color: var(--ink-wine); }
+    .nav-links a:hover::after { width: 100%; }
 
     /* Hero Container & Canvas */
     .hero-stage {
       position: relative;
       width: 100%;
-      min-height: calc(100vh - 80px);
+      height: calc(100vh - 78px);
+      min-height: 640px;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      background-color: var(--bg-parchment);
     }
 
     #antiGravityCanvas {
@@ -231,27 +223,26 @@
       height: 100%;
       z-index: 2;
       cursor: default;
+      display: block;
     }
 
     .hero-content {
       position: relative;
       z-index: 5;
       max-width: 960px;
-      padding: 40px 24px;
+      padding: 30px 24px;
       text-align: center;
       pointer-events: none;
     }
 
-    .hero-interactive {
-      pointer-events: auto;
-    }
+    .hero-interactive { pointer-events: auto; }
 
     .hero-pill-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       padding: 6px 16px;
-      background: rgba(249, 247, 242, 0.9);
+      background: rgba(249, 247, 242, 0.92);
       border: 1px solid var(--border-line);
       border-radius: 999px;
       font-family: var(--font-mono);
@@ -259,7 +250,7 @@
       color: var(--ink-green);
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.03);
       backdrop-filter: blur(6px);
     }
@@ -280,12 +271,12 @@
 
     .hero-headline {
       font-family: var(--font-serif-display);
-      font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+      font-size: clamp(2.2rem, 5.2vw, 4.2rem);
       font-weight: 700;
-      line-height: 1.12;
+      line-height: 1.14;
       color: var(--ink-charcoal);
       letter-spacing: -0.5px;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       text-wrap: balance;
     }
 
@@ -297,11 +288,11 @@
     }
 
     .hero-subhead {
-      font-size: clamp(1rem, 1.8vw, 1.25rem);
+      font-size: clamp(1rem, 1.7vw, 1.2rem);
       line-height: 1.6;
       color: var(--ink-muted);
       max-width: 680px;
-      margin: 0 auto 36px auto;
+      margin: 0 auto 30px auto;
       font-weight: 400;
     }
 
@@ -310,14 +301,14 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
-      margin-bottom: 40px;
+      margin-bottom: 34px;
     }
 
     .tag-badge {
       font-family: var(--font-mono);
       font-size: 11px;
       padding: 5px 12px;
-      background: rgba(240, 237, 230, 0.7);
+      background: rgba(240, 237, 230, 0.85);
       border: 1px dashed var(--border-line);
       color: var(--ink-slate);
       letter-spacing: 0.5px;
@@ -335,12 +326,12 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding: 14px 28px;
+      padding: 13px 26px;
       background: var(--ink-green);
       color: var(--paper-ivory);
       text-decoration: none;
       font-family: var(--font-serif-display);
-      font-size: 13px;
+      font-size: 12.5px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
       font-weight: 600;
@@ -360,12 +351,12 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding: 14px 26px;
+      padding: 13px 24px;
       background: var(--paper-ivory);
       color: var(--ink-charcoal);
       text-decoration: none;
       font-family: var(--font-serif-display);
-      font-size: 13px;
+      font-size: 12.5px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
       font-weight: 600;
@@ -382,7 +373,7 @@
     }
 
     .hero-floating-tip {
-      margin-top: 34px;
+      margin-top: 28px;
       font-family: var(--font-mono);
       font-size: 11px;
       color: var(--ink-muted);
@@ -390,7 +381,7 @@
       align-items: center;
       gap: 8px;
       letter-spacing: 0.5px;
-      background: rgba(245, 242, 235, 0.6);
+      background: rgba(245, 242, 235, 0.75);
       padding: 4px 14px;
       border-radius: 999px;
       border: 1px solid var(--border-line);
@@ -495,6 +486,15 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.3);
     }
 
+    .hud-slider::-moz-range-thumb {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--ink-green);
+      border: 2px solid var(--paper-ivory);
+      cursor: pointer;
+    }
+
     .hud-btn-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -538,7 +538,7 @@
     @media (max-width: 768px) {
       .site-header { padding: 14px 20px; }
       .nav-links { display: none; }
-      .hero-content { padding: 30px 18px; }
+      .hero-content { padding: 24px 16px; }
       .physics-hud {
         right: 14px;
         bottom: 14px;
@@ -550,11 +550,11 @@
 </head>
 <body>
 
-  <!-- Cotton Banknote Security Fiber & Noise Texture Overlay -->
+  <!-- Cotton Paper Texture -->
   <div class="parchment-grain-overlay" aria-hidden="true"></div>
   <div class="parchment-vignette" aria-hidden="true"></div>
 
-  <!-- Top Market Ticker Bar (Wall Street Teletype Style) -->
+  <!-- Ticker Superior -->
   <aside class="top-ticker-bar" aria-label="Cotizaciones de mercado">
     <div class="ticker-track">
       <div class="ticker-item"><span class="ticker-symbol">DJIA</span> 43,910.2 <span class="ticker-val-up">▲ +0.78%</span></div>
@@ -565,14 +565,13 @@
       <div class="ticker-item"><span class="ticker-symbol">FED FUNDS</span> 4.75% <span class="ticker-val-up">▲ 0.00%</span></div>
       <div class="ticker-item"><span class="ticker-symbol">NASDAQ 100</span> 19,281.4 <span class="ticker-val-up">▲ +1.50%</span></div>
       <div class="ticker-item"><span class="ticker-symbol">VIX</span> 14.82 <span class="ticker-val-down">▼ -0.85%</span></div>
-      <!-- Repetición continua para loop infinito -->
       <div class="ticker-item"><span class="ticker-symbol">DJIA</span> 43,910.2 <span class="ticker-val-up">▲ +0.78%</span></div>
       <div class="ticker-item"><span class="ticker-symbol">S&amp;P 500</span> 5,864.6 <span class="ticker-val-up">▲ +1.12%</span></div>
       <div class="ticker-item"><span class="ticker-symbol">US10Y</span> 4.318% <span class="ticker-val-down">▼ -0.04%</span></div>
     </div>
   </aside>
 
-  <!-- Site Header -->
+  <!-- Encabezado -->
   <header class="site-header">
     <div class="header-brand">
       <div class="brand-monogram">BH</div>
@@ -593,12 +592,10 @@
     </nav>
   </header>
 
-  <!-- Main Hero Stage with Anti-Gravity Physics Canvas -->
+  <!-- Hero Banner con Canvas Anti-Gravedad -->
   <main class="hero-stage">
-    <!-- Interactive Canvas -->
     <canvas id="antiGravityCanvas" aria-label="Simulación física anti-gravedad de billetes de dólar y sellos monetarios interactivos"></canvas>
 
-    <!-- Hero Content Overlay -->
     <section class="hero-content">
       <div class="hero-interactive">
         <div class="hero-pill-badge">
@@ -634,11 +631,11 @@
       </div>
 
       <div class="hero-floating-tip">
-        <span>✦ <strong>Interacción:</strong> Mueve el ratón para crear brisa • Arrastra y lanza los billetes</span>
+        <span>✦ <strong>Interacción:</strong> Pasa el ratón para crear brisa • Arrastra y lanza los billetes</span>
       </div>
     </section>
 
-    <!-- Interactive HUD Control Panel -->
+    <!-- Panel HUD -->
     <aside class="physics-hud" id="physicsHud" aria-label="Controles del simulador físico">
       <div class="hud-header" id="hudToggle" title="Plegar / Desplegar panel">
         <div class="hud-title">
@@ -682,13 +679,12 @@
     </aside>
   </main>
 
-  <!-- Anti-Gravity Physics & Procedural Canvas Engine -->
+  <!-- Motor Canvas 2D/2.5D Embebido -->
   <script>
   (function () {
     'use strict';
 
     const CONFIG = {
-      targetFps: 60,
       itemCountDesktop: 16,
       itemCountMobile: 9,
       mobileBreakpoint: 768,
@@ -721,8 +717,8 @@
     };
 
     let canvas, ctx;
-    let width = 0;
-    let height = 0;
+    let width = 1200;
+    let height = 800;
     let dpr = 1;
     let items = [];
     let textures = {};
@@ -741,7 +737,6 @@
       lastActive: 0
     };
 
-    // Offscreen Canvas Generator for 2x Retina Crispness
     function createOffscreen(w, h) {
       const osc = document.createElement('canvas');
       osc.width = Math.round(w * 2);
@@ -751,7 +746,6 @@
       return { canvas: osc, ctx: octx, width: w, height: h };
     }
 
-    // Mathematical Guilloché Rosette (Harmonic Hypotrochoid/Epitrochoid)
     function drawGuilloche(ctx, cx, cy, R, r, p, steps, strokeStyle, lineWidth = 0.75) {
       ctx.save();
       ctx.beginPath();
@@ -767,7 +761,6 @@
       ctx.restore();
     }
 
-    // Banknote Security Border
     function drawSecurityBorder(ctx, w, h, color) {
       ctx.save();
       ctx.strokeStyle = color;
@@ -811,7 +804,6 @@
       ctx.restore();
     }
 
-    // Procedural Banknote (Ratio 2.6:1 ~ 260 x 100)
     function generateBanknoteTexture(variant = 1) {
       const w = 260;
       const h = 100;
@@ -820,25 +812,19 @@
       g.fillStyle = CONFIG.palette.paperIvory;
       g.fillRect(0, 0, w, h);
 
-      // Micro-pattern
-      const patCanvas = document.createElement('canvas');
-      patCanvas.width = 12;
-      patCanvas.height = 12;
-      const pctx = patCanvas.getContext('2d');
-      pctx.fillStyle = '#FAF7EE';
-      pctx.fillRect(0, 0, 12, 12);
-      pctx.strokeStyle = '#ECE5D4';
-      pctx.lineWidth = 0.5;
-      pctx.beginPath();
-      pctx.moveTo(0, 6); pctx.lineTo(12, 6);
-      pctx.moveTo(6, 0); pctx.lineTo(6, 12);
-      pctx.stroke();
-      g.fillStyle = g.createPattern(patCanvas, 'repeat');
-      g.fillRect(0, 0, w, h);
+      g.strokeStyle = '#ECE5D4';
+      g.lineWidth = 0.5;
+      g.beginPath();
+      for (let x = 0; x < w; x += 8) {
+        g.moveTo(x, 0); g.lineTo(x, h);
+      }
+      for (let y = 0; y < h; y += 8) {
+        g.moveTo(0, y); g.lineTo(w, y);
+      }
+      g.stroke();
 
       drawSecurityBorder(g, w, h, CONFIG.palette.inkDollarGreen);
 
-      // Central Medallion
       const ovalCx = w / 2;
       const ovalCy = h / 2;
       const ovalRx = 38;
@@ -849,7 +835,11 @@
 
       g.save();
       g.beginPath();
-      g.ellipse(ovalCx, ovalCy, ovalRx, ovalRy, 0, 0, Math.PI * 2);
+      if (g.ellipse) {
+        g.ellipse(ovalCx, ovalCy, ovalRx, ovalRy, 0, 0, Math.PI * 2);
+      } else {
+        g.arc(ovalCx, ovalCy, (ovalRx + ovalRy) / 2, 0, Math.PI * 2);
+      }
       g.clip();
 
       g.fillStyle = '#E8E3D5';
@@ -863,15 +853,13 @@
         g.stroke();
       }
 
-      // Engraved Iconography inside Oval
       g.fillStyle = CONFIG.palette.inkCharcoal;
       g.strokeStyle = CONFIG.palette.inkCharcoal;
       g.lineWidth = 1.2;
 
       if (variant === 1) {
-        // Imperial Eagle
         g.beginPath();
-        g.ellipse(ovalCx, ovalCy - 2, 8, 14, 0, 0, Math.PI * 2);
+        g.arc(ovalCx, ovalCy - 2, 8, 0, Math.PI * 2);
         g.fill();
         g.beginPath();
         g.arc(ovalCx, ovalCy - 17, 5, 0, Math.PI * 2);
@@ -895,7 +883,6 @@
         g.lineTo(ovalCx + 18, ovalCy + 14);
         g.stroke();
       } else {
-        // Wall Street Bull
         g.beginPath();
         g.moveTo(ovalCx - 20, ovalCy + 6);
         g.quadraticCurveTo(ovalCx - 24, ovalCy - 6, ovalCx - 14, ovalCy - 12);
@@ -917,14 +904,16 @@
       }
       g.restore();
 
-      // Oval ring
       g.strokeStyle = CONFIG.palette.inkDollarGreenDark;
       g.lineWidth = 1.2;
       g.beginPath();
-      g.ellipse(ovalCx, ovalCy, ovalRx, ovalRy, 0, 0, Math.PI * 2);
+      if (g.ellipse) {
+        g.ellipse(ovalCx, ovalCy, ovalRx, ovalRy, 0, 0, Math.PI * 2);
+      } else {
+        g.arc(ovalCx, ovalCy, (ovalRx + ovalRy) / 2, 0, Math.PI * 2);
+      }
       g.stroke();
 
-      // Official Seals
       const leftSealX = ovalCx - 64;
       const leftSealY = ovalCy + 2;
       g.save();
@@ -939,7 +928,7 @@
       }
       g.closePath();
       g.stroke();
-      g.font = 'bold 9px "Playfair Display", "Times New Roman", serif';
+      g.font = 'bold 9px "Playfair Display", Georgia, serif';
       g.textAlign = 'center';
       g.textBaseline = 'middle';
       g.fillText('⚖', leftSealX, leftSealY - 1);
@@ -959,14 +948,13 @@
       }
       g.closePath();
       g.stroke();
-      g.font = 'bold 12px "Playfair Display", "Times New Roman", serif';
+      g.font = 'bold 12px "Playfair Display", Georgia, serif';
       g.textAlign = 'center';
       g.textBaseline = 'middle';
       g.fillText(variant === 1 ? 'NY' : 'FED', rightSealX, rightSealY);
       g.restore();
 
-      // Denominations & Typography
-      g.font = 'bold 13px "Cinzel", "Playfair Display", serif';
+      g.font = 'bold 13px "Cinzel", Georgia, serif';
       g.fillStyle = CONFIG.palette.paperIvory;
       g.textAlign = 'center';
       g.textBaseline = 'middle';
@@ -995,7 +983,6 @@
       return osc;
     }
 
-    // Circular Ticker Token / Wax Seal
     function generateTokenTexture(symbol, color) {
       const size = 68;
       const { canvas: osc, ctx: g } = createOffscreen(size, size);
@@ -1027,7 +1014,7 @@
       g.textAlign = 'center';
       g.textBaseline = 'middle';
       if (symbol.length <= 2) {
-        g.font = 'bold 22px "Cinzel", serif';
+        g.font = 'bold 22px "Cinzel", Georgia, serif';
         g.fillText(symbol, 0, 1);
       } else {
         g.font = 'bold 12px "JetBrains Mono", monospace';
@@ -1037,7 +1024,6 @@
       return osc;
     }
 
-    // Ticker Tape Strip
     function generateTickerTapeTexture(text, width = 230) {
       const height = 44;
       const { canvas: osc, ctx: g } = createOffscreen(width, height);
@@ -1067,7 +1053,6 @@
       return osc;
     }
 
-    // Japanese Candlesticks Plaque
     function generateChartPlaqueTexture() {
       const w = 150;
       const h = 90;
@@ -1080,7 +1065,7 @@
       g.strokeRect(3, 3, w - 6, h - 6);
       g.strokeRect(5.5, 5.5, w - 11, h - 11);
 
-      g.font = 'bold 6.5px "Cinzel", serif';
+      g.font = 'bold 6.5px "Cinzel", Georgia, serif';
       g.fillStyle = CONFIG.palette.inkCharcoal;
       g.textAlign = 'center';
       g.fillText('VOLATILITY INDEX & STOCHASTICS', w / 2, 14);
@@ -1156,7 +1141,6 @@
       };
     }
 
-    // Physical Entity Class
     class FloatingAsset {
       constructor(type, textureKey, x, y, options = {}) {
         this.type = type;
@@ -1170,7 +1154,7 @@
         this.vx = (Math.random() - 0.5) * CONFIG.ambientDriftSpeed;
         this.vy = (Math.random() - 0.5) * CONFIG.ambientDriftSpeed;
         
-        this.z = options.z || 0.7 + Math.random() * 0.6;
+        this.z = options.z || (0.7 + Math.random() * 0.6);
         this.baseScale = options.scale || (0.8 + Math.random() * 0.35);
 
         this.angle = (Math.random() - 0.5) * Math.PI * 0.4;
@@ -1297,11 +1281,11 @@
           ctx.transform(1, roll * 0.25, 0, 1 - Math.abs(pitch) * 0.15, 0, 0);
         }
 
-        // Dynamic Soft Drop Shadow
+        // Sombra suave en elevación Z
         const shadowDist = 14 * this.z;
         const shadowBlur = 18 * this.z;
         ctx.save();
-        ctx.shadowColor = 'rgba(40, 35, 25, 0.18)';
+        ctx.shadowColor = 'rgba(40, 35, 25, 0.22)';
         ctx.shadowBlur = shadowBlur;
         ctx.shadowOffsetX = 8 * this.z;
         ctx.shadowOffsetY = shadowDist;
@@ -1309,289 +1293,12 @@
         ctx.fillRect(-renderW / 2, -renderH / 2, renderW, renderH);
         ctx.restore();
 
-        // Draw Cached Offscreen Texture
+        // Dibujar textura offscreen
         ctx.drawImage(
           tex,
           0, 0, tex.width, tex.height,
           -renderW / 2, -renderH / 2, renderW, renderH
         );
 
-        // Pseudo-3D Sheen Highlight
-        if (this.type === 'bill' || this.type === 'chart') {
-          const sheen = ctx.createLinearGradient(
-            -renderW / 2, -renderH / 2,
-            renderW / 2, renderH / 2
-          );
-          const lightIntensity = Math.max(0, pitch * 0.2);
-          sheen.addColorStop(0, `rgba(255, 255, 255, ${0.08 + lightIntensity})`);
-          sheen.addColorStop(0.5, 'rgba(255, 255, 255, 0)');
-          sheen.addColorStop(1, 'rgba(30, 20, 10, 0.06)');
-          ctx.fillStyle = sheen;
-          ctx.fillRect(-renderW / 2, -renderH / 2, renderW, renderH);
-        }
-
-        ctx.restore();
-      }
-    }
-
-    function populateWorld() {
-      items = [];
-      const isMobile = width < CONFIG.mobileBreakpoint;
-      const count = isMobile ? CONFIG.itemCountMobile : CONFIG.itemCountDesktop;
-
-      const availableBillTextures = ['bill100', 'bill1'];
-      const availableTokenTextures = ['tokenDollar', 'tokenWine', 'tokenBlue', 'tokenGold'];
-      const availableTapes = ['tape1', 'tape2'];
-
-      for (let i = 0; i < count; i++) {
-        let type, texKey;
-        const rand = Math.random();
-
-        if (rand < 0.45) {
-          type = 'bill';
-          texKey = availableBillTextures[i % availableBillTextures.length];
-        } else if (rand < 0.75) {
-          type = 'token';
-          texKey = availableTokenTextures[i % availableTokenTextures.length];
-        } else if (rand < 0.90) {
-          type = 'tape';
-          texKey = availableTapes[i % availableTapes.length];
-        } else {
-          type = 'chart';
-          texKey = 'chartPlaque';
-        }
-
-        const col = i % 4;
-        const row = Math.floor(i / 4);
-        const gridX = (width / 4) * (col + 0.5) + (Math.random() - 0.5) * (width / 5);
-        const gridY = (height / 4) * (row + 0.5) + (Math.random() - 0.5) * (height / 5);
-
-        const asset = new FloatingAsset(type, texKey, gridX, gridY, {
-          scale: isMobile ? 0.75 : 0.95
-        });
-        items.push(asset);
-      }
-    }
-
-    function resolveSoftSeparation() {
-      const len = items.length;
-      for (let i = 0; i < len; i++) {
-        for (let j = i + 1; j < len; j++) {
-          const a = items[i];
-          const b = items[j];
-
-          const dx = b.x - a.x;
-          const dy = b.y - a.y;
-          const distSq = dx * dx + dy * dy;
-          const minDist = (a.w * a.baseScale + b.w * b.baseScale) * 0.38;
-
-          if (distSq < minDist * minDist && distSq > 0) {
-            const dist = Math.sqrt(distSq);
-            const overlap = minDist - dist;
-            const nx = dx / dist;
-            const ny = dy / dist;
-            const push = overlap * 0.008;
-
-            if (!a.isDragging) { a.vx -= nx * push; a.vy -= ny * push; }
-            if (!b.isDragging) { b.vx += nx * push; b.vy += ny * push; }
-          }
-        }
-      }
-    }
-
-    function getCanvasCoords(e) {
-      const rect = canvas.getBoundingClientRect();
-      const clientX = e.clientX ?? (e.touches && e.touches[0] ? e.touches[0].clientX : pointer.x);
-      const clientY = e.clientY ?? (e.touches && e.touches[0] ? e.touches[0].clientY : pointer.y);
-      return { x: clientX - rect.left, y: clientY - rect.top };
-    }
-
-    function handlePointerMove(e) {
-      const coords = getCanvasCoords(e);
-      pointer.prevX = pointer.x;
-      pointer.prevY = pointer.y;
-      pointer.x = coords.x;
-      pointer.y = coords.y;
-
-      pointer.vx = (pointer.x - pointer.prevX);
-      pointer.vy = (pointer.y - pointer.prevY);
-      pointer.lastActive = performance.now();
-
-      if (!pointer.isDown) {
-        let hovered = false;
-        for (let i = items.length - 1; i >= 0; i--) {
-          if (items[i].containsPoint(pointer.x, pointer.y)) {
-            hovered = true;
-            break;
-          }
-        }
-        canvas.style.cursor = hovered ? 'grab' : 'default';
-      }
-    }
-
-    function handlePointerDown(e) {
-      const coords = getCanvasCoords(e);
-      pointer.x = coords.x;
-      pointer.y = coords.y;
-      pointer.isDown = true;
-
-      for (let i = items.length - 1; i >= 0; i--) {
-        const item = items[i];
-        if (item.containsPoint(pointer.x, pointer.y)) {
-          pointer.dragItem = item;
-          item.isDragging = true;
-          item.dragOffset.x = item.x - pointer.x;
-          item.dragOffset.y = item.y - pointer.y;
-
-          items.splice(i, 1);
-          items.push(item);
-          canvas.style.cursor = 'grabbing';
-          break;
-        }
-      }
-    }
-
-    function handlePointerUp() {
-      if (pointer.dragItem) {
-        pointer.dragItem.vx = pointer.vx * CONFIG.throwVelocityMultiplier;
-        pointer.dragItem.vy = pointer.vy * CONFIG.throwVelocityMultiplier;
-        pointer.dragItem.vAngle = (pointer.vx * 0.006);
-        pointer.dragItem.isDragging = false;
-        pointer.dragItem = null;
-      }
-      pointer.isDown = false;
-      canvas.style.cursor = 'default';
-    }
-
-    function handleResize() {
-      const container = canvas.parentElement || document.body;
-      width = container.clientWidth;
-      height = container.clientHeight;
-      dpr = Math.min(window.devicePixelRatio || 1, 2);
-
-      canvas.width = Math.round(width * dpr);
-      canvas.height = Math.round(height * dpr);
-      canvas.style.width = width + 'px';
-      canvas.style.height = height + 'px';
-
-      ctx.setTransform(1, 0, 0, 1, 0, 0);
-      ctx.scale(dpr, dpr);
-
-      if (items.length === 0) populateWorld();
-    }
-
-    function animate(timestamp) {
-      ctx.clearRect(0, 0, width, height);
-
-      if (performance.now() - pointer.lastActive < 400) {
-        items.forEach(item => {
-          item.applyBreeze(pointer.x, pointer.y, pointer.vx, pointer.vy);
-        });
-      }
-
-      resolveSoftSeparation();
-
-      items.forEach(item => {
-        item.update(timestamp);
-        item.render(ctx);
-      });
-
-      animationFrameId = requestAnimationFrame(animate);
-    }
-
-    window.AntiGravityHero = {
-      init: function (canvasElementId) {
-        canvas = document.getElementById(canvasElementId);
-        if (!canvas) return;
-        ctx = canvas.getContext('2d');
-        initTextures();
-        handleResize();
-
-        window.addEventListener('resize', handleResize);
-        window.addEventListener('pointermove', handlePointerMove, { passive: true });
-        canvas.addEventListener('pointerdown', handlePointerDown);
-        window.addEventListener('pointerup', handlePointerUp);
-        window.addEventListener('pointercancel', handlePointerUp);
-
-        if (animationFrameId) cancelAnimationFrame(animationFrameId);
-        lastTime = performance.now();
-        animationFrameId = requestAnimationFrame(animate);
-      },
-      scatterAll: function (force = 10) {
-        items.forEach(item => {
-          const angle = Math.random() * Math.PI * 2;
-          item.vx = Math.cos(angle) * (force * (0.6 + Math.random() * 0.8));
-          item.vy = Math.sin(angle) * (force * (0.6 + Math.random() * 0.8));
-          item.vAngle = (Math.random() - 0.5) * 0.08;
-        });
-      },
-      spawnAsset: function (type = 'bill') {
-        const texKey = type === 'bill' ? (Math.random() > 0.5 ? 'bill100' : 'bill1')
-                      : type === 'token' ? 'tokenDollar'
-                      : 'tape1';
-        const asset = new FloatingAsset(type, texKey, width / 2, height / 2, {
-          scale: width < 768 ? 0.75 : 0.95
-        });
-        asset.vy = -3 - Math.random() * 2;
-        asset.vx = (Math.random() - 0.5) * 4;
-        items.push(asset);
-      },
-      setDensity: function (count) {
-        CONFIG.itemCountDesktop = count;
-        populateWorld();
-      },
-      updateConfig: function (key, value) {
-        if (CONFIG.hasOwnProperty(key)) CONFIG[key] = value;
-      }
-    };
-  })();
-
-  // HUD & UI Interactions
-  document.addEventListener('DOMContentLoaded', () => {
-    AntiGravityHero.init('antiGravityCanvas');
-
-    const hud = document.getElementById('physicsHud');
-    const hudToggle = document.getElementById('hudToggle');
-    const hudChevron = document.getElementById('hudChevron');
-
-    const sliderBreeze = document.getElementById('sliderBreeze');
-    const breezeVal = document.getElementById('breezeVal');
-    const sliderFriction = document.getElementById('sliderFriction');
-    const frictionVal = document.getElementById('frictionVal');
-    const sliderDensity = document.getElementById('sliderDensity');
-    const densityVal = document.getElementById('densityVal');
-
-    const btnSpawnBill = document.getElementById('btnSpawnBill');
-    const btnSpawnToken = document.getElementById('btnSpawnToken');
-    const btnScatter = document.getElementById('btnScatter');
-
-    hudToggle.addEventListener('click', () => {
-      hud.classList.toggle('collapsed');
-      hudChevron.textContent = hud.classList.contains('collapsed') ? '▴' : '▾';
-    });
-
-    sliderBreeze.addEventListener('input', (e) => {
-      const val = parseFloat(e.target.value);
-      breezeVal.textContent = val.toFixed(2);
-      AntiGravityHero.updateConfig('breezeForce', val);
-    });
-
-    sliderFriction.addEventListener('input', (e) => {
-      const val = parseFloat(e.target.value);
-      frictionVal.textContent = val.toFixed(3);
-      AntiGravityHero.updateConfig('airFriction', val);
-    });
-
-    sliderDensity.addEventListener('input', (e) => {
-      const val = parseInt(e.target.value, 10);
-      densityVal.textContent = val;
-      AntiGravityHero.setDensity(val);
-    });
-
-    btnSpawnBill.addEventListener('click', () => AntiGravityHero.spawnAsset('bill'));
-    btnSpawnToken.addEventListener('click', () => AntiGravityHero.spawnAsset('token'));
-    btnScatter.addEventListener('click', () => AntiGravityHero.scatterAll(14));
-  });
-  </script>
-</body>
-</html>
+        // Brillo reflectivo
+        if (this.type === 'bill' || this.type
