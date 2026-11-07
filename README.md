@@ -1,42 +1,34 @@
-<div align="center">
+Actúa como un desarrollador frontend senior especializado en creatividades interactivas, Three.js / Canvas y física 2D/3D.
 
-  <!-- BANNER O ENCABEZADO PRINCIPAL -->
-  <a href="https://linkedin.com/in/TU_USUARIO_LINKEDIN" target="_blank">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=220&section=header&text=Beatriz%20Hernández&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Business%20Analytics%20%7C%20Data%20Analyst&descFontSize=20&descAlignY=60&descAlign=50" width="100%" alt="Header Banner" />
-  </a>
+Crea un componente web interactivo con efecto "anti-gravedad" (elementos flotantes con física suave e ingravidez al interactuar) listo para incrustar en la sección hero de una página web moderna.
 
-  <!-- TYPING SVG EFECTO DINÁMICO -->
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=1000&color=00D2FF&center=true&vCenter=true&width=650&lines=Transformando+datos+en+decisiones+estrat%C3%A9gicas;Business+Intelligence+%2B+Modelado+Predictivo;Especialista+en+Python%2C+SQL%2C+Power+BI+y+BigQuery;Explorando+tendencias%2C+optimizando+negocios" alt="Typing SVG" />
-  </a>
+### 1. Dirección de Arte y Estética (Vintage Desaturado / Muted Retro)
+- **Atmósfera:** Editorial retro/vintage, inspirada en impresiones analógicas, portadas de libros de los años 60-70 y estética papel prensa/riso.
+- **Paleta de color (baja saturación y cálida):**
+  - Fondo: Crema/marfil envejecido suave (`#F4EFEA` o `#EAE5DB`).
+  - Textura opcional: Grano sutil (noise overlay) o leve trama tipo semitono/papel.
+  - Colores de acento (desaturados y con carácter):
+    - Terracota/Ladrillo apagado (`#C96A5B`)
+    - Verde salvia/oliva suave (`#7A8B7B`)
+    - Mostaza/Ocre desaturado (`#CFA85E`)
+    - Azul pizarra/acero vintage (`#5E7382`)
+    - Tinta oscura para texto y bordes (`#2B2A27`, nunca negro puro `#000000`).
+- **Tipografía sugerida:** Fuentes serif clásicas o slab-serif estilo editorial (ej. Playfair Display, Fraunces o Newsreader) combinadas con sans-serif monoespaciada para pequeños detalles (ej. Space Mono).
 
-  <br/><br/>
+### 2. Objetos y Elementos Flotantes (Anti-gravedad)
+- Genera entre 6 y 10 elementos que floten de manera orgánica en el lienzo:
+  - Mezcla de formas geométricas abstractas (píldoras, esferas retro, tarjetas redondeadas, estrellas de 4 puntas retro) o pequeños bloques tipo insignias ("badges" con texto breve como "EST. 2026", "ANALYTICS", "DATA", "STRATEGY").
+  - Estilo visual de los objetos: Bordes limpios, sombras suaves difusas (estilo papel superpuesto) o bordes de trazo fino tipo ilustración impresa.
 
-  <!-- BOTONES DE CONTACTO RÁPIDO -->
-  <a href="https://linkedin.com/in/TU_USUARIO_LINKEDIN" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:tu-email@correo.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://public.tableau.com/app/profile/TU_PERFIL" target="_blank">
-    <img src="https://img.shields.io/badge/Tableau_Public-E97627?style=for-the-badge&logo=tableau&logoColor=white" alt="Tableau Public" />
-  </a>
-  <a href="https://github.com/TU_USUARIO_GITHUB?tab=repositories" target="_blank">
-    <img src="https://img.shields.io/badge/Proyectos-100000?style=for-the-badge&logo=github&logoColor=white" alt="Repositorios" />
-  </a>
+### 3. Comportamiento Físico e Interacción
+- **Efecto de ingravidez:** Movimiento continuo, lento y oscilante (flotación senoidal o física tipo Matter.js / Canvas API).
+- **Interacción con el cursor:**
+  - Repulsión suave cuando el ratón se acerca (efecto de empuje hidrodinámico o magnetismo inverso).
+  - Posibilidad de arrastrar y soltar (drag & drop) los elementos con inercia y amortiguación (*damping*).
+- **Comportamiento en bordes:** Rebote suave contra los límites del contenedor sin salir de pantalla.
 
-</div>
-
----
-
-### 💼 Sobre Mí
-
-Estudiante de **Analítica de Negocios** apasionada por el **Análisis de Datos** y la inteligencia empresarial. Mi objetivo es actuar como **puente entre la técnica y la estrategia de negocio**, traduciendo volúmenes complejos de datos en conclusiones claras, modelos accionables y cuadros de mando interactivos que impulsen el crecimiento y la eficiencia operativa.
-
-```text
-┌─────────────────────────────────────────────────────────────────────────────┐
-│ 🎯 ENFOQUE: Análisis Exploratorio • Modelado Predictivo • Data Storytelling  │
-│ 💼 APLICACIÓN: Optimización de KPIs • Segmentación • Forecasting Comercial  │
-│ 🧠 FILOSOFÍA: "Los datos solo son valiosos si transforman las decisiones"    │
-└─────────────────────────────────────────────────────────────────────────────┘
+### 4. Requisitos Técnicos de Entrega
+- Código limpio, autónomo y responsivo (adaptable a móvil y escritorio).
+- Puede estar construido en **HTML/CSS + JavaScript vanilla (HTML5 Canvas / RequestAnimationFrame)** o usando una librería ligera como **Matter.js** o **Three.js** vía CDN.
+- Mantén el rendimiento a 60 FPS con animaciones fluidas y sin dependencias pesadas.
+- Incluye comentarios claros en las variables de color y física para poder calibrar la gravedad y la velocidad fácilmente.
